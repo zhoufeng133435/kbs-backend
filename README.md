@@ -9,3 +9,6 @@
 - `kb-search-service`: 搜索聚合服务
 - `kb-common`: 公共模块
 - `deploy`: 部署配置
+
+## kbs工作流
+![img.png](img.png)
