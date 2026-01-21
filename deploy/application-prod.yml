@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kb-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: document-service
+          uri: lb://kb-document-service
+          predicates:
+            - Path=/api/document/**
+        - id: vector-service
+          uri: lb://kb-vector-service
+          predicates:
+            - Path=/api/vector/**
+        - id: search-service
+          uri: lb://kb-search-service
+          predicates:
+            - Path=/api/search/**
