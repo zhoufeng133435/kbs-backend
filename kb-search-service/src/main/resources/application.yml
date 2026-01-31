@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/kb_search?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 133435
+    password: rootpassword
     hikari:
       minimum-idle: 5
       maximum-pool-size: 20
@@ -17,7 +17,7 @@ spring:
       connection-timeout: 30000
   data:
     redis:
-      host: 127.0.0.1
+      host: localhost
       port: 6379
       database: 2
       timeout: 3000ms
